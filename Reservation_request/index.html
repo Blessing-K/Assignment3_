@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Request</title>
+  <link rel="stylesheet" href="./reservation.css">
+</head>
+<body class="wrapper">
+    <h1>Reservation Request</h1>
+    <form id="reservation-form">
+        <fieldset>
+            <legend>General Information</legend>
+            <label for="arrival-date">Arrival date:</label>
+            <input type="text" id="arrival-date" name="arrival-date"><br>
+            
+            <label for="nights">Nights:</label>
+            <input type="text" id="nights" name="nights"><br>
+            
+            <label for="adults">Adults:</label>
+            <select id="adults">
+                <option value="" selected disabled>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br>
+            
+            <label for="children">Children:</label>
+            <select id="children">
+                <option value="" selected disabled>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="roomType">Room type:</label>
+            <input type="radio" id="roomType" name="roomType"> Standard
+            <input type="radio" id="roomType" name="roomType"> Business
+            <input type="radio" id="roomType" name="roomType"> Suite
+            <br>
+            <label for="bedType">Bed type:</label>
+            <input type="radio" id="bedType" name="bedType"> King
+            <input type="radio" id="bedType" name="bedType"> Double Double
+            <br>
+            <label><input type="checkbox" name="smoking" value="yes"> Smoking</label>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+            
+            <label for="phone">Phone:</label>
+            <input class="grey" type="text" id="phone" name="phone">
+        </fieldset>
+        <button type="submit">Submit Request</button>
+    </form>
+  
+    <footer>
+    <p>&copy; Boluwatito Kajopelaye-ola N01718897 2024</p>
+    </footer>
+  <script src="./reservation.js" defer></script>
+</body>
+</html>
